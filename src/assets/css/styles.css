@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "inventionregular";
+  src: url("~@/assets/fonts/invention_rg-webfont.woff2") format("woff2"), url("~@/assets/fonts/invention_rg-webfont.woff") format("woff"), url("~@/assets/fonts/invention_rg-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inventionbold";
+  src: url("~@/assets/fonts/invention_bd-webfont.woff2") format("woff2"), url("~@/assets/fonts/invention_bd-webfont.woff") format("woff"), url("~@/assets/fonts/invention_bd-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inventionitalic";
+  src: url("~@/assets/fonts/invention_it-webfont.woff2") format("woff2"), url("~@/assets/fonts/invention_it-webfont.woff") format("woff"), url("~@/assets/fonts/invention_it-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inventionlight";
+  src: url("~@/assets/fonts/invention_lt-webfont.woff2") format("woff2"), url("~@/assets/fonts/invention_lt-webfont.woff") format("woff"), url("~@/assets/fonts/invention_lt-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Invention";
+  src: url("~@/assets/fonts/invention_lt-webfont.woff2") format("woff2"), url("~@/assets/fonts/invention_lt-webfont.woff") format("woff"), url("~@/assets/fonts/invention_lt-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Colors*/
+:root {
+  --primary-color: #0c2340;
+  --secondary-color: #00857c;
+  --tertiary-color: #6eceb2;
+  --quarternary-color: #f7f7f7;
+  --accent-1-color: #bfed33;
+  --accent-2-color: #fff063;
+  --accent-3-color: #69b8f7;
+  --accent-4-color: #688ce8;
+  --accent-5-color: #5450e4;
+  --primary-text-color: var(--primary-color);
+}
+
+body {
+  font-family: 'inventionregular', arial, sans-serif;
+  color: #0C2340;
+}
+
+.bg-teal {
+  background-color: teal;
+}
+
+.bg-navy {
+  background-color: #0C2340;
+}
+
+.bg-ltgray {
+  background-color: #f7f7f7;
+}
+
+.text-gray {
+  color: #747474;
+}
+
+.text-teal {
+  color: #00857C;
+}
+
+.text-white {
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-family: 'inventionlight';
+  color: #0C2340;
+  line-height: normal;
+}
+
+h2 {
+  font-family: 'inventionlight';
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: 'inventionlight';
+}
+
+.arrow-btn {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.arrow-btn:hover {
+  color: #fff;
+}
+
+.arrow-btn::after {
+  content: "";
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  height: 10px;
+  width: 10px;
+  margin-left: 20px;
+  float: right;
+}
+
+/*******Top Nav*****/
+.navbar a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar a.nav-link {
+  font-size: 1.1rem;
+  font-family: 'inventionlight';
+}
+
+.navbar a.nav-link:hover {
+  color: #fff;
+}
+
+.navbar a.router-link-exact-active {
+  color: #fff;
+  border-bottom: 3px solid #6ECEB2;
+  font-family: 'inventionbold';
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 2.125rem;
+  font-family: 'inventionlight';
+}
+
+/********HOME********/
+.hm_banner {
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+}
+
+.hm_banner2 {
+  background-image: url(../images/home-banner2.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: top;
+}
+
+/*******Accordion*****/
+.accordion-item:last-of-type .accordion-collapse, .accordion-item, .accordion-item:first-of-type, .accordion-item:last-of-type {
+  border-radius: 0;
+  border-color: #0C2340;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "";
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 1px;
+  height: 10px;
+  width: 10px;
+  margin-left: 20px;
+  float: right;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  background-image: unset;
+  margin-top: 5px;
+}
+
+.accordion-button::after {
+  content: "";
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 1px;
+  height: 10px;
+  width: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-image: unset;
+  float: right;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.accordion-button:not(.collapsed), .accordion-item:last-of-type .accordion-button.collapsed {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #0C2340;
+  color: #fff;
+}
+
+.accordion-button {
+  font-size: 1.5rem;
+}
+
+.help-link-list li {
+  margin-bottom: 1rem;
+}
+
+.help-link-list a {
+  color: #00857C;
+}
+
+/*******Footer*****/
+.foot-nav a {
+  color: #0C2340;
+  font-size: 1rem;
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
