@@ -1,4 +1,5 @@
 <template>
+<header role="banner" class="site-header">
   <nav class="navbar navbar-expand-lg bg-navy pb-0">
     <div class="container mx-auto d-block">
       <div class="row">
@@ -29,16 +30,14 @@
                 <router-link to="/grant-types" class="nav-link px-0 h-100">Grant types &amp; eligibility</router-link>
               </li>
               <li class="nav-item px-lg-3">
-                <router-link to="/grant-types" class="nav-link px-0 h-100">Learn about the process</router-link>
+                <router-link to="/learn-about-process" class="nav-link px-0 h-100">Learn about the process</router-link>
               </li>
               <li class="nav-item px-lg-3">
-                <router-link to="/grant-types" class="nav-link px-0 h-100">After you apply or receive a grant</router-link>
+                <router-link to="/after-you-apply" class="nav-link px-0 h-100">After you apply or receive a grant</router-link>
               </li>
-              <li class="nav-item px-lg-3">
-                <router-link to="/grant-types" class="nav-link px-0 h-100">More resources for you</router-link>
-              </li>
+
               <li class="nav-item ps-lg-3">
-                <router-link to="/grant-types" class="nav-link px-0 h-100">Have a question?</router-link>
+                <router-link to="/faqs" class="nav-link px-0 h-100">Have a question?</router-link>
               </li>
             </ul>
           </div>
@@ -46,6 +45,7 @@
       </div>
     </div>
   </nav>
+  </header>
 </template>
 <script>
 export default {

@@ -1,5 +1,5 @@
 <template>
-  <div class="grant-types">
+  <div class="learn-about-process">
     <HeaderNav />
     <main id="content" role="main" tabindex="-1">
       <!--START CONTAINER-->

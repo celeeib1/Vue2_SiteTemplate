@@ -49,7 +49,7 @@
     }
     
         $merck-teal: #00857C;
-        $dark-teal: #005c55;
+        $dark-teal: #005C55;
         $merck-ltteal: #6ECEB2;
         $merck-navy: #0C2340;
         $merck-lemon: #FFF063;
@@ -84,28 +84,60 @@ body {
 .text-white{
   color: #fff;
 }
+.hidden{
+  display: none;
+}
 h1{
-  font-size:2.8rem;
+  font-size:3.2rem;
   font-family: 'inventionlight';
   color: $merck-navy;
   line-height: normal;
 }
+h1.innerpage{
+  font-size:2.4rem;
+}
 h2{
   font-family: 'inventionlight';
-  font-size: 2rem;
+  font-size: 2.4rem;
+}
+h3{
+  font-family: 'inventionlight';
+  font-size: 1.55rem;
 }
 a{
   text-decoration: none;
+  &.content-link{
+  color: $merck-teal;
+  &:hover{
+    color: $dark-teal;
+  }
 }
-p{
+}
+.content-link{
+  color: $merck-teal;
+}
+p, ul{
   font-size: 1.1rem;
   font-family: 'inventionlight';
 }
+.bold, strong{
+  font-family: 'inventionbold';
+}
 .arrow-btn{
+  span{
+    width: 90%;
+  }
   color: #fff;
   font-size: 1.2rem;
   text-decoration: none;
+  height: 100px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 2rem;
+
   &:hover{
+    background-color:$dark-teal;
     color: #fff;
   }
   &::after{
@@ -116,11 +148,69 @@ p{
     padding: 1px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     margin-left: 20px;
     float: right;
 }
+}
+.hollow-btn-white{
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'inventionlight';
+  border: 1px solid #fff;
+  padding: .5rem 1rem;
+  display: block;
+  text-align: center;
+  &:hover{
+    background-color: #fff;
+    color: $merck-teal;
+  }
+}
+.toggle-link {
+  &:hover{
+    color: $dark-teal;
+  }
+  &[aria-expanded="false"] {
+    &::after {
+    content:"";
+    border: solid $merck-teal;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 1px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+}
+&:hover{
+  color: $dark-teal;
+}
+  }
+  &[aria-expanded="true"] {
+    
+    &:not(.collapsed)::after {
+    content:"";
+    border: solid $merck-teal;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 1px;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    height: 6px;
+    width: 6px;
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+}
+&:hover{
+  color: $dark-teal;
+}
+  }
+
 }
 /*******Top Nav*****/
 
@@ -148,7 +238,12 @@ p{
     font-size: 2.125rem;
     font-family: 'inventionlight';
 }
-
+.navbar-toggler-icon{
+  &::before{
+    content: 'MENU';
+    color: #fff;
+  }
+}
 /********HOME********/
 .hm_banner{
   background-image: url(../images/home-banner.jpg);
@@ -161,6 +256,82 @@ p{
   background-size:cover;
   height: 400px;
   background-position: top;
+}
+.conditions{
+  font-family: 'inventionregular';
+  &ul{
+    &li{
+      font-family:"inventionlight";
+    }
+  }
+}
+/********GRANT TYPE********/
+.grant_banner{
+  background-image: url(../images/grant-type-banner1.png);
+  background-size:cover;
+  height: 400px;
+  background-position: top center;
+}
+.grant_banner2{
+  background-image: url(../images/grant-type-banner2.png);
+  background-size:cover;
+  height: 400px;
+  background-position: top center;
+}
+/********LEARN ABOUT PROCESS********/
+.learn-process-banner{
+  background-image: url(../images/learn-process-banner.jpg);
+  background-size:cover;
+  height: 400px;
+  background-position: top center;
+}
+.icon-col{
+  background-color: $merck-teal;
+  padding:1.75rem 1rem;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+.grant-process-step{
+  background-color: $merck-ltgray;
+}
+.step{
+  display: flex;
+.step-num{
+  padding: 0.25rem 0.65rem;
+  background-color: #00857C;
+  color: #fff;
+  font-size: .9rem;
+  margin-right: 10px;
+  font-family: 'inventionregular';
+  display: inline-flex;
+  height: 30px;
+}
+  font-family: 'inventionbold';
+}
+.minus-plus-bullets{
+  ul{
+    list-style-type: none;
+    margin: 0;
+
+   li{
+    text-indent: -20px;
+    
+    &::before{
+        content: "-";
+        text-indent: -20px;
+        margin-right: 10px;
+    }
+  }
+}
+}
+/*********HELPFUL LINKS*********/
+.helpful-links-banner{
+  background-image: url(../images/helpful-info-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 /*******Accordion*****/
 .accordion-item:last-of-type .accordion-collapse, .accordion-item, .accordion-item:first-of-type, .accordion-item:last-of-type{
@@ -202,11 +373,11 @@ float: right;
   box-shadow: none;
   border: none;
 }
-.accordion-button:not(.collapsed), .accordion-item:last-of-type .accordion-button.collapsed{
-  box-shadow: none;
-  background-color: $merck-navy;
-  color: $white;
-}
+// .accordion-button:not(.collapsed), .accordion-item:last-of-type .accordion-button.collapsed{
+//   box-shadow: none;
+//   background-color: $merck-navy;
+//   color: $white;
+// }
 .accordion-button{
   font-size: 1.5rem;
 }
@@ -218,6 +389,43 @@ float: right;
     color: $merck-teal;
   }
 }
+/*******FAQS Accordion*****/
+/*ITEM*/
+.accordion__item {
+  cursor: pointer;
+  padding: 10px 20px 10px 40px;
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+}
+
+.accordion__trigger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-enter-active,
+.accordion-leave-active {
+  will-change: height, opacity;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.accordion-enter,
+.accordion-leave-to {
+  height: 0 !important;
+  opacity: 0;
+}
+
+.accordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  &__item:last-child {
+    border-bottom: none;
+  
+}
+}
 /*******Footer*****/
 .foot-nav{
   a{
@@ -226,4 +434,19 @@ float: right;
     text-decoration: none;
   }
   
+}
+.copyright-info{
+  p{
+  font-size: .8rem;
+  font-family: 'inventionregular';
+}
+}
+.foot-logo{
+  max-width: 200px;
+}
+@media (min-width: 992px) {
+  .w-lg-75{
+    width: 75%;
+  
+}
 }
