@@ -164,6 +164,15 @@ p, ul {
   float: right;
 }
 
+.arrow-btn.lgtext {
+  font-size: 1.5rem;
+  height: auto;
+}
+
+.arrow-btn.lgtext::after {
+  margin-top: 5px;
+}
+
 .hollow-btn-white {
   color: #fff;
   font-size: 1.5rem;
@@ -348,6 +357,73 @@ p, ul {
   margin-right: 10px;
 }
 
+.applying_accordion .accordion .card {
+  border-radius: 0;
+  border: none;
+  margin-bottom: .5rem;
+}
+
+.applying_accordion .accordion .card .card-body {
+  padding: 1rem 2rem;
+}
+
+.applying_accordion .accordion .card-header {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.applying_accordion .accordion .card-header .btn-link {
+  background-color: #00857C;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  outline: none;
+}
+
+.applying_accordion .accordion .card-header .btn-link.active {
+  background-color: #0C2340;
+}
+
+.applying_accordion .accordion .card-header .btn-link::after {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  float: right;
+}
+
+.applying_accordion .accordion .card-header .btn-link.not-active::after {
+  content: "+";
+  line-height: 1rem;
+  font-size: 1.5rem;
+}
+
+.applying_accordion .accordion .card-header .btn-link.active::after {
+  content: "-";
+  font-size: 2.4rem;
+  line-height: 1.2rem;
+}
+
+.applying_accordion .accordion .card-header .btn-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/***AFTER YOU APPLY ************/
+.after_apply_banner {
+  background-image: url(../images/after-apply-banner.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+}
+
 /*********HELPFUL LINKS*********/
 .helpful-links-banner {
   background-image: url(../images/helpful-info-banner.png);
@@ -356,7 +432,7 @@ p, ul {
   background-position: top center;
 }
 
-/*******Accordion*****/
+/*******GENERIC ACCORDION*****/
 .accordion-item:last-of-type .accordion-collapse, .accordion-item, .accordion-item:first-of-type, .accordion-item:last-of-type {
   border-radius: 0;
   border-color: #0C2340;
@@ -416,46 +492,84 @@ p, ul {
   color: #00857C;
 }
 
+/****FAQ Pg ****************/
+.faq_banner {
+  background-image: url(../images/faq-banner.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: top center;
+}
+
 /*******FAQS Accordion*****/
-/*ITEM*/
-.accordion__item {
-  cursor: pointer;
-  padding: 10px 20px 10px 40px;
-  border-bottom: 1px solid #ebebeb;
+.faq-accordions .accordion .card {
+  border-radius: 0;
+  border: none;
+  margin-bottom: .5rem;
+}
+
+.faq-accordions .accordion .card .card-body {
+  padding: 1rem 2rem;
+}
+
+.faq-accordions .accordion .card-header {
+  background-color: #00857C;
+  border-radius: 0;
+  padding: 0.25rem 1rem;
+}
+
+.faq-accordions .accordion .card-header .btn-link {
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  outline: none;
+}
+
+.faq-accordions .accordion .card-header .btn-link::before {
+  color: #0C2340;
+  padding: 1px;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
   position: relative;
+  text-align: center;
+  margin-right: 10px;
 }
 
-.accordion__trigger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.faq-accordions .accordion .card-header .btn-link.not-active::before {
+  content: "+";
+  line-height: .9rem;
+  font-size: 1.2rem;
 }
 
-.accordion-enter-active,
-.accordion-leave-active {
-  will-change: height, opacity;
-  -webkit-transition: height 0.3s ease, opacity 0.3s ease;
-  transition: height 0.3s ease, opacity 0.3s ease;
-  overflow: hidden;
+.faq-accordions .accordion .card-header .btn-link.active::before {
+  content: "-";
+  font-size: 1.9rem;
+  line-height: .5rem;
 }
 
-.accordion-enter,
-.accordion-leave-to {
-  height: 0 !important;
-  opacity: 0;
+.faq-accordions .accordion .card-header .btn-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.accordion {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/*******TABBED SIDEBAR****/
+.tabbed-list li {
+  border-bottom: 1px solid #00857C;
 }
 
-.accordion__item:last-child {
-  border-bottom: none;
+.tabbed-list li label {
+  color: #00857C;
+  padding: .5rem 2rem;
+  border-left: 5px solid #00857C;
+  margin: 5px 0;
+}
+
+.tabbed-list li.activetab label {
+  border-left: 5px solid #0C2340;
+  color: #0C2340;
+  font-family: "inventionbold";
 }
 
 /*******Footer*****/
@@ -477,6 +591,9 @@ p, ul {
 @media (min-width: 992px) {
   .w-lg-75 {
     width: 75%;
+  }
+  .container-md-w-50 {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

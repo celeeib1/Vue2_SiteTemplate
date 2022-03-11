@@ -153,6 +153,13 @@ p, ul{
     margin-left: 20px;
     float: right;
 }
+&.lgtext{
+  font-size: 1.5rem;
+  height: auto;
+  &::after{
+    margin-top: 5px;
+  }
+}
 }
 .hollow-btn-white{
   color: #fff;
@@ -326,6 +333,75 @@ p, ul{
   }
 }
 }
+
+.applying_accordion {
+  .accordion{
+    .card{
+      border-radius: 0;
+      border: none;
+      margin-bottom: .5rem;
+
+      .card-body{
+        padding: 1rem 2rem;
+      }
+    }
+    .card-header{
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border-bottom: none;
+
+    .btn-link{
+      background-color: $merck-teal;
+      border-radius: 0;
+      padding: 1rem 1.5rem;
+
+      color: #fff;
+      text-decoration: none;
+      text-align: left;
+      width: 100%;
+      outline: none;
+      &.active{
+        background-color: $merck-navy;
+      }
+      &::after{
+        color: #fff;
+        padding: 5px;
+        border: 1px solid #fff;
+     
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        float: right;
+      }
+      &.not-active{
+      &::after{
+        content: "+";
+        line-height: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+    &.active{
+      &::after{
+        content: "-";
+        font-size: 2.4rem;
+        line-height: 1.2rem;
+      }
+    }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+}
+}
+/***AFTER YOU APPLY ************/
+.after_apply_banner{
+    background-image: url(../images/after-apply-banner.jpg);
+    background-size:cover;
+    height: 400px;
+    background-position: center;
+}
 /*********HELPFUL LINKS*********/
 .helpful-links-banner{
   background-image: url(../images/helpful-info-banner.png);
@@ -333,7 +409,7 @@ p, ul{
   background-repeat: no-repeat;
   background-position: top center;
 }
-/*******Accordion*****/
+/*******GENERIC ACCORDION*****/
 .accordion-item:last-of-type .accordion-collapse, .accordion-item, .accordion-item:first-of-type, .accordion-item:last-of-type{
   border-radius: 0;
   border-color: $merck-navy;
@@ -389,42 +465,92 @@ float: right;
     color: $merck-teal;
   }
 }
+/****FAQ Pg ****************/
+.faq_banner{
+  background-image: url(../images/faq-banner.jpg);
+  background-size:cover;
+  height: 400px;
+  background-position: top center;
+}
 /*******FAQS Accordion*****/
-/*ITEM*/
-.accordion__item {
-  cursor: pointer;
-  padding: 10px 20px 10px 40px;
-  border-bottom: 1px solid #ebebeb;
-  position: relative;
-}
+.faq-accordions {
+  .accordion{
+    .card{
+      border-radius: 0;
+      border: none;
+      margin-bottom: .5rem;
 
-.accordion__trigger {
-  display: flex;
-  justify-content: space-between;
+      .card-body{
+        padding: 1rem 2rem;
+      }
+    }
+    .card-header{
+      background-color: $merck-teal;
+      border-radius: 0;
+      padding: 0.25rem 1rem;
+     
+    
+    .btn-link{
+      color: #fff;
+      text-decoration: none;
+      text-align: left;
+      width: 100%;
+      outline: none;
+      &::before{
+        color: #0C2340;
+        padding: 1px;
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+      
+     
+        position: relative;
+        text-align: center;
+        margin-right: 10px;
+      }
+      &.not-active{
+      &::before{
+        content: "+";
+        line-height: .9rem;
+        font-size: 1.2rem;
+      }
+    }
+    &.active{
+      &::before{
+        content: "-";
+        font-size: 1.9rem;
+        line-height: .5rem;
+      }
+    }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
 }
-
-.accordion-enter-active,
-.accordion-leave-active {
-  will-change: height, opacity;
-  transition: height 0.3s ease, opacity 0.3s ease;
-  overflow: hidden;
 }
-
-.accordion-enter,
-.accordion-leave-to {
-  height: 0 !important;
-  opacity: 0;
-}
-
-.accordion {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/*******TABBED SIDEBAR****/
+.tabbed-list{
+  li{
+    border-bottom: 1px solid $merck-teal;
+    label{
+      color: $merck-teal;
+      padding: .5rem 2rem;
+      border-left: 5px solid $merck-teal;
+      margin: 5px 0;
+    }
   
-  &__item:last-child {
-    border-bottom: none;
-  
-}
+    &.activetab{
+ 
+      label{
+        border-left: 5px solid $merck-navy;
+        color: $merck-navy;
+        font-family: "inventionbold";
+      }
+    }
+    
+  }
 }
 /*******Footer*****/
 .foot-nav{
@@ -447,6 +573,9 @@ float: right;
 @media (min-width: 992px) {
   .w-lg-75{
     width: 75%;
-  
+
+}
+.container-md-w-50{
+  width: 50%;
 }
 }

@@ -1,11 +1,11 @@
 <template>
 <div class="row">
-  <div class="col-md-3"
+  <div class="col-lg-3 col-md-4 pe-lg-5"
     :class="{
       'flex space-x-4': variant === 'horizontal',
     }"
   >
-    <ul class="list-unstyled"
+    <ul class="tabbed-list list-unstyled"
       :class="{
         'mb-3': variant === 'vertical',
       }"
@@ -13,10 +13,10 @@
       <li
         v-for="(tab, index) in tabList"
         :key="index"
-        class="content-link"
+        class="sidetab"
         :class="{
-          'tex-teal bg-ltgray': index + 1 === activeTab,
-          'text-teal': index + 1 !== activeTab,
+          'activetab': index + 1 === activeTab,
+          '': index + 1 !== activeTab,
         }"
       >
         <label
@@ -39,7 +39,7 @@
       <div
         :key="index"
         v-if="index + 1 === activeTab"
-        class="col-md-9"
+        class="col-lg-9 col-md-8"
       >
 
         <slot :name="`tabPanel-${index + 1}`" />
