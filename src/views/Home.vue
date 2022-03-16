@@ -39,15 +39,14 @@
           </div>
         </div>
         <div class="row mt-4 mb-5">
-          <div class="col-md-5">
+          <div class="col-lg-5 col-md-2">
             <img alt="" role="presentation" src="@/assets/images/FPO-oncology.jpg" class="img-fluid" />
           </div>
-          <div class="col-md-7">
-
+          <div class="col-lg-7 col-md-10">
 
           <div class="row">
           <div class="col-md-6">
-            <ul class="conditions mt-xl-0 mt-lg-0 mt-md-0 mt-5">
+            <ul class="conditions mt-xl-0 mt-lg-0 mt-md-0 mt-5 mb-0">
               <li>Anesthesiology/Perioperative Care</li>
               <li>Chronic Cough</li>
               <li>Cardiovascular - Heart Failure</li>
@@ -68,7 +67,7 @@
               </li>-->
               </div>
               <div class="col-md-6">
-              <ul class="conditions mt-xl-0 mt-lg-0 mt-md-0 mt-5">
+              <ul class="conditions mt-0">
                <li>Oncology (cancer)
                <ul>
                 <li>Bladder Cancer</li>

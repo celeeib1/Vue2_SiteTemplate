@@ -1,12 +1,12 @@
 <template>
-<header role="banner" class="site-header">
+<header role="banner" class="site-header sticky-top">
   <nav class="navbar navbar-expand-lg bg-navy pb-0">
     <div class="container mx-auto d-block">
-      <div class="row">
-        <div class="col-md-11">
+      <div class="row py-4">
+        <div class="col-lg-11 col-md-10 col-9">
           <a class="navbar-brand site-title my-5" href="#">Merck US Patient Advocacy Grants</a>
         </div>
-        <div class="col-md-1">
+        <div class="col-lg-2 col-md-2 col-3 text-end">
           <button
             class="navbar-toggler"
             type="button"

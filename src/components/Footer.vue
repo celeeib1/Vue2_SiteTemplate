@@ -1,6 +1,6 @@
 <template>
 <footer class="footer" id="#footer">
-  <div class="container">
+  <div class="container px-lg-0">
      <hr class="my-5" />
     
       

@@ -132,7 +132,7 @@
                 interdum suscipit, metus nibh vulputate odio, ut rutrum eros est at lectus. Etiam porttitor mi sit amet urna pulvinar, 
                 in placerat nibh commodo. Nam auctor lorem quis augue rutrum, id hendrerit erat fringilla.</p>
             </accordion>
-            <accordion title="Helpful hints for before you log in to apply" active="true">
+            <accordion title="Helpful hints for before you log in to apply">
              <ul>
              <li>For the best results, you may want to use Google Chrome as your browser when you apply</li>
             <li>Read our FAQs to see if your organization and program or event are eligible for support and find answers to the most common grant questions</li>

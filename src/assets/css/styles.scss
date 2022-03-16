@@ -66,6 +66,22 @@ body {
     font-family: 'inventionregular', arial, sans-serif;
      color: $merck-navy;
 }
+main{
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bg-teal{
   background-color: teal;
 }
@@ -116,9 +132,12 @@ a{
 .content-link{
   color: $merck-teal;
 }
-p, ul{
+p, ul, ol{
   font-size: 1.1rem;
   font-family: 'inventionlight';
+}
+ul, ol{
+  padding-left: 1.25rem;
 }
 .bold, strong{
   font-family: 'inventionbold';
@@ -222,6 +241,7 @@ p, ul{
 /*******Top Nav*****/
 
 .navbar {
+  border-bottom: 1px solid #fff;
   a {
   font-weight: bold;
   color: #fff;
@@ -235,7 +255,7 @@ p, ul{
   }
   &.router-link-exact-active {
     color: #fff;
-    border-bottom: 3px solid $merck-ltteal;
+    border-bottom: 6px solid $merck-teal;
     font-family: 'inventionbold';
   }
 }
@@ -244,12 +264,57 @@ p, ul{
     color: #fff;
     font-size: 2.125rem;
     font-family: 'inventionlight';
+    white-space: normal;
+}
+.navbar-toggler{
+  border-radius: 0;
+  margin-top: 10px;
+  border: none;
+ 
+  &:focus{
+    box-shadow: none;
+  }
+  &[aria-expanded="true"]{
+    .navbar-toggler-icon{
+    &::before{
+    content:"x";
+    font-size: 1.5rem;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: .2;
+    }
+    100% {
+      opacity: 1;
+    }
+  
+  }
+}
+}
 }
 .navbar-toggler-icon{
-  &::before{
-    content: 'MENU';
-    color: #fff;
+  color: #fff;
+  width: auto;
+
+  &:hover{
+    color: $merck-ltteal;
   }
+
+  &::after{
+    content: 'Menu';
+  }
+  &::before{
+    content:'\2630';
+    margin-right: 7px;
+
+  }
+  
 }
 /********HOME********/
 .hm_banner{
@@ -299,9 +364,14 @@ p, ul{
     display: block;
     margin: 0 auto;
   }
+
 }
 .grant-process-step{
   background-color: $merck-ltgray;
+  ul, ol{
+    font-family: "inventionlight";
+  }
+
 }
 .step{
   display: flex;
@@ -402,12 +472,29 @@ p, ul{
     height: 400px;
     background-position: center;
 }
+.after-you-apply {
+.icon-col{
+  background-color: $merck-ltgray;
+  padding:0;
+  
+  .icon-bx{
+    background-color: $merck-teal;
+    align-items: center;
+    width: 100%;
+    padding:2.3rem 1.5rem;
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+}
 /*********HELPFUL LINKS*********/
 .helpful-links-banner{
   background-image: url(../images/helpful-info-banner.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 /*******GENERIC ACCORDION*****/
 .accordion-item:last-of-type .accordion-collapse, .accordion-item, .accordion-item:first-of-type, .accordion-item:last-of-type{
@@ -539,6 +626,10 @@ float: right;
       padding: .5rem 2rem;
       border-left: 5px solid $merck-teal;
       margin: 5px 0;
+      &:hover{
+        color: $dark-teal;
+        
+      }
     }
   
     &.activetab{
@@ -547,6 +638,7 @@ float: right;
         border-left: 5px solid $merck-navy;
         color: $merck-navy;
         font-family: "inventionbold";
+       
       }
     }
     
@@ -577,5 +669,11 @@ float: right;
 }
 .container-md-w-50{
   width: 50%;
+}
+}
+@media (max-width:1024px){
+  .step{
+    display:block;
+   
 }
 }

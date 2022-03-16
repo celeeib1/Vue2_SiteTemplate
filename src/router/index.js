@@ -50,14 +50,24 @@ const routes = [
 }
 ]
 
+
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior: (to, from, savedPosition) => {
+    if (savedPosition) {
+      return savedPosition;
+    } else if (to.hash) {
+      return {
+        selector: to.hash
+      };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
+});
   
-})
-
-
 // Checks Meta Titles. This callback runs before every route change, including on page load.
 router.beforeEach((to, from, next) => {
   // This goes through the matched routes from last to first, finding the closest route with a title.

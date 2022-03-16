@@ -1,5 +1,5 @@
 <template>
-  <div class="learn-about-process">
+  <div class="faqs">
     <HeaderNav />
     <main id="content" role="main" tabindex="-1">
           <div class="container-fluid faq_banner" role="presentation"></div>
