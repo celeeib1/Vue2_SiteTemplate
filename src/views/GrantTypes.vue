@@ -22,11 +22,11 @@
 
         <div class="row">
           <div class="col-lg-6 pe-lg-5">
-            <a href="#" class="arrow-btn bg-teal my-3"><span>Patient Advocacy Grants</span></a>
+            <a href="https://msdimegrants.com/" target="_blank" class="arrow-btn bg-teal my-3"><span>Patient Advocacy Grants</span></a>
           </div>
           <div class="col-lg-6 ps-lg-5">
-            <a href="#" class="arrow-btn bg-teal my-3"><span>What to do after you apply<br />
-                or receive a grant</span></a>
+            <router-link to="/after-you-apply" class="arrow-btn bg-teal my-3"><span>What to do after you apply<br />
+                or receive a grant</span></router-link>
           </div>
         </div>
       </div>

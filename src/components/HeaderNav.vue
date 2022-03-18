@@ -1,10 +1,10 @@
 <template>
 <header role="banner" class="site-header sticky-top">
-  <nav class="navbar navbar-expand-lg bg-navy pb-0">
+  <nav class="navbar navbar-expand bg-navy pb-0">
     <div class="container mx-auto d-block">
       <div class="row py-4">
         <div class="col-lg-11 col-md-10 col-9">
-          <a class="navbar-brand site-title my-5" href="#">Merck US Patient Advocacy Grants</a>
+           <router-link to="/" class="navbar-brand site-title my-5">Merck US Patient Advocacy Grants</router-link>
         </div>
         <div class="col-lg-2 col-md-2 col-3 text-end">
           <button

@@ -6,7 +6,7 @@
 
      
       <!--START CONTAINER ICONS-->
-      <div class="container py-5">
+      <div class="container-md py-5">
         <div class="row">
           <div class="col-12">
             <h1 id="main-title" class="innerpage mt-5">What happens after I submit my grant application?</h1>
@@ -123,7 +123,7 @@
       </div>
       <!--END CONTAINER ICONS--> 
          <!--START CONTAINER-->
-          <div class="container py-5 my-3">
+          <div class="container-md py-5 my-3">
           <HelpfulLinks />
           </div>
         <!--END CONTAINER-->  

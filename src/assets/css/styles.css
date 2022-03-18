@@ -289,11 +289,18 @@ ul, ol {
   font-family: 'inventionbold';
 }
 
-.navbar-brand {
+a.navbar-brand {
   color: #fff;
   font-size: 2.125rem;
   font-family: 'inventionlight';
   white-space: normal;
+  text-decoration: none;
+}
+
+a.navbar-brand.router-link-exact-active {
+  text-decoration: none;
+  font-family: 'inventionlight';
+  border: none;
 }
 
 .navbar-toggler {
@@ -686,10 +693,18 @@ ul, ol {
 }
 
 /*******Footer*****/
+.trust-ico {
+  width: 120px;
+}
+
 .foot-nav a {
   color: #0C2340;
   font-size: 1rem;
   text-decoration: none;
+}
+
+.foot-nav a:hover {
+  color: #005C55;
 }
 
 .copyright-info p {
@@ -701,6 +716,7 @@ ul, ol {
   max-width: 200px;
 }
 
+/***MEDIA QUERY*****/
 @media (min-width: 992px) {
   .w-lg-75 {
     width: 75%;
@@ -713,6 +729,9 @@ ul, ol {
 @media (max-width: 1024px) {
   .step {
     display: block;
+  }
+  .after-you-apply .icon-col .icon-bx {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

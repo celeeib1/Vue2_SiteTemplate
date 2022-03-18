@@ -260,11 +260,19 @@ ul, ol{
   }
 }
 }
-.navbar-brand{
+a {
+&.navbar-brand{
     color: #fff;
     font-size: 2.125rem;
     font-family: 'inventionlight';
     white-space: normal;
+   text-decoration: none;
+   &.router-link-exact-active{
+    text-decoration: none;
+    font-family: 'inventionlight';
+    border:none;
+   }
+}
 }
 .navbar-toggler{
   border-radius: 0;
@@ -465,6 +473,7 @@ ul, ol{
   }
 }
 }
+
 /***AFTER YOU APPLY ************/
 .after_apply_banner{
     background-image: url(../images/after-apply-banner.jpg);
@@ -645,13 +654,19 @@ float: right;
   }
 }
 /*******Footer*****/
+.trust-ico{
+  width: 120px;
+}
 .foot-nav{
   a{
     color: $merck-navy;
     font-size: 1rem;
     text-decoration: none;
+    &:hover{
+      color: $dark-teal;
+    }
   }
-  
+
 }
 .copyright-info{
   p{
@@ -662,6 +677,9 @@ float: right;
 .foot-logo{
   max-width: 200px;
 }
+
+
+/***MEDIA QUERY*****/
 @media (min-width: 992px) {
   .w-lg-75{
     width: 75%;
@@ -676,4 +694,12 @@ float: right;
     display:block;
    
 }
+.after-you-apply {
+  .icon-col{
+    
+    .icon-bx{
+      padding:1rem;
+    }
+  }
+  }
 }

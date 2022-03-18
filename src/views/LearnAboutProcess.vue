@@ -1,9 +1,8 @@
 <template>
   <div class="learn-about-process">
     <HeaderNav />
-    <div class="container-fluid learn-process-banner" role="presentation"></div>
     <main id="content" role="main" tabindex="-1">
-     
+     <div class="container-fluid learn-process-banner" role="presentation"></div>
      
       <!--START CONTAINER ICONS-->
       <div class="container py-5">
@@ -110,9 +109,9 @@
            </div>
        <!--END CONTAINER-->
      <!--START CONTAINER-->
-      <div class="container applying_accordion">
+      <div class="container applying_accordion px-0">
             <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-7">
            <accordions>
             <accordion title="Check your eligibility">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis diam elit. Sed ornare nibh erat, quis porttitor 
@@ -143,7 +142,7 @@
         </accordions>
         </div>
      
-    <div class="col-lg-6 ps-lg-5">
+    <div class="col-lg-6 col-md-5 ps-lg-5">
                     <img alt="" role="presentation" src="@/assets/images/review-banner.png" class="img-fluid" />
           </div>
           </div>
@@ -154,7 +153,7 @@
           <h2 class="text-center">Apply at the MSD grant portal</h2>
           <h3 class="text-center my-4">Once your prep work is completed you are ready to submit an application</h3>
           <div class="container-md-w-50 mx-auto">
-           <a href="#" class="arrow-btn lgtext bg-teal my-5 mx-auto d-block px-5"><span>Merck grant submission tool</span></a>
+           <a href="https://msdimegrants.com/" target="_blank" class="arrow-btn lgtext bg-teal my-5 mx-auto d-block px-5"><span>Merck grant submission tool</span></a>
             </div>
           
           </div>
