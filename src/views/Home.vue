@@ -15,7 +15,7 @@
             <h2 class="text-teal">Mission</h2>
             <p>
               Our mission is to understand the needs and experiences of patients, caregivers, and family members and
-              provide support for high quality, innovative educational and awareness initiatives.
+              provide support for high-quality, innovative educational, and awareness initiatives.
             </p>
           </div>
           <div class="col-md-6 ps-lg-4">
@@ -48,9 +48,9 @@
           <div class="col-md-6">
             <ul class="conditions mt-xl-0 mt-lg-0 mt-md-0 mt-5 mb-0">
               <li>Anesthesiology/Perioperative Care</li>
-              <li>Chronic Cough</li>
               <li>Cardiovascular - Heart Failure</li>
-              <li>Cardiovascular - Pulmonary Arterial Hypertension</li>
+              <li>CardiovascularPH (pulmonary hypertension)</li>
+              <li>Chronic Cough</li>
               <li>Diabetes</li>
               <li>Gastrointestinal (GI)/Rheumatology</li>
               <li>Hepatitis C</li>
@@ -59,6 +59,7 @@
               <li>Immunization – Adult</li>
               <li>Immunization – Pediatric (for children)</li>
               <li>Infectious Disease</li>
+              <li>Sleep Disorders</li>
              </ul>
               <!--<li class="list-unstyled">
                 <p class="mb-0"><a class="toggle-link text-teal" data-bs-toggle="collapse" href="#collapseSubList"
@@ -88,8 +89,7 @@
                 <li>Small Cell Lung Cancer</li> 
                 </ul>
                   </li>
-              <li>Rare Disease</li>
-              <li>Sleep Disorders</li>
+            
             </ul>
            
            
@@ -108,7 +108,7 @@
             </p>
 
           </div>
-          <div class="col-lg-5"> <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-4 single"><span>Apply for a patient advocacy
+          <div class="col-lg-5"> <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-4 single interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Apply for a patient advocacy
                 grant</span></a></div>
           <div class="col-lg-6"></div>
           <div class="col-lg-1"></div>
@@ -123,14 +123,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 pe-lg-5">
-              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3"><span>Apply for a patient advocacy grant</span></a>
+              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Apply for a patient advocacy grant</span></a>
             </div>
             <div class="col-lg-6 ps-lg-5">
-              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3"><span>What to do after you apply<br />
+              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>What to do after you apply<br />
                   or receive a grant</span></a>
             </div>
             <div class="col-lg-6 pe-lg-5">
-              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3"><span>Understanding the grant process</span></a>
+              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Understanding the grant process</span></a>
             </div>
             <div class="col-lg-6 ps-lg-5">
               <router-link to="/faqs" class="arrow-btn bg-teal my-3"><span>Need help?<br />
@@ -156,6 +156,7 @@
       </div>
       <!--START CONTAINER-->
     </main>
+    <LeavingModal/>
     <Footer />
   </div>
 </template>
@@ -164,12 +165,14 @@
   // @ is an alias to /src
   import HeaderNav from "@/components/HeaderNav.vue";
   import Footer from "@/components/Footer.vue";
+  import LeavingModal from "@/components/LeavingModal.vue";
 
   export default {
     name: "Home",
     components: {
       HeaderNav,
-      Footer
+      Footer,
+      LeavingModal
     }
   };
 </script>

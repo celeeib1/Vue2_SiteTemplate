@@ -30,7 +30,7 @@
           <p class="step">If we are reviewing your application</p>
           <ul>
           <li>If we ask you for more information, please submit it right away because we will need it to reach a decision about your grant request</li>
-          <li class="pt-4">You can log in to the <strong>MSD Grant Portal</strong> (<a class="content-link" href="https://www.msdgrant.com" target="_blank">www.msdgrant.com</a>) to view your request(s) and check the status of your application. 
+          <li class="pt-4">You can log in to the <strong>MSD Grant Portal</strong> (<a class="content-link interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal" href="https://www.msdgrant.com" target="_blank">www.msdgrant.com</a>) to view your request(s) and check the status of your application. 
           Once you’ve logged in, you will see a list of all your requests. To the right of each request, you will see the status</li>
           </ul>
 
@@ -89,8 +89,8 @@
            <p>Outcomes: Report the outcomes of your program or event</p>
             <p>Outcomes give important information (such as attendance numbers, change in knowledge, testimonials, and success tactics) that help us understand the impact and effectiveness of the programs we support. 
             It is a chance for your organization to share the success of your program. 
-            It also verifies that the funding was used as described in the approved request. 
-              You must complete an outcomes form for a program that was funded with a Patient Advocacy Grant (it is not required for Fundraising Charitable Grants). According to the executed LOA, if you do not complete the required outcomes 
+            It also verifies that the funding was used as described in the approved request.</p>
+              <p>You must complete an outcomes form for a program that was funded with a Patient Advocacy Grant (it is not required for Fundraising Charitable Grants). According to the executed LOA, if you do not complete the required outcomes 
               form, it may affect your organization’s eligibility for future grant support.</p>
           <ol>
           <li>Once your program is done, you will get an email from our Grant Portal prompting you to complete the outcomes form</li>
@@ -110,7 +110,7 @@
           <li>The program happened and that the entire grant amount was used in the manner and for the purpose it was intended, only for the program specified in the LOA
           
           </li> 
-          <p>If you find that you need more than 45 calendar days to complete the form, please either inform your Merck USPA contact or send an email to 
+          <p class="mt-3">If you find that you need more than 45 calendar days to complete the form, please either inform your Merck USPA contact or send an email to 
           <a href="mailto:uspatientadvocacy@merck.com" class="content-link">uspatientadvocacy@merck.com</a>. 
           We will assess your extension request and give the decision to the person who requested it.</p>
           </ul>
@@ -129,6 +129,7 @@
         <!--END CONTAINER-->  
           
     </main>
+    <LeavingModal/>
     <Footer />
   </div>
 </template>
@@ -137,13 +138,15 @@
   import HeaderNav from '@/components/HeaderNav.vue';
   import Footer from "@/components/Footer.vue";
   import HelpfulLinks from "@/components/HelpfulLinks.vue";
+  import LeavingModal from "@/components/LeavingModal.vue";
 
   export default {
     name: 'grant-types',
     components: {
       HeaderNav,
       Footer,
-      HelpfulLinks
+      HelpfulLinks,
+      LeavingModal
     }
   }
 </script>

@@ -716,6 +716,129 @@ a.navbar-brand.router-link-exact-active {
   max-width: 200px;
 }
 
+/**********Modal**********/
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-inner {
+  border: solid 1px transparent;
+  margin: 10px;
+}
+
+.modal-content .modal-header {
+  background: #00857C;
+  border: none;
+  border-bottom: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+}
+
+.modal-content .modal-title {
+  color: #fff;
+}
+
+.modal-header .close {
+  color: #fff;
+  opacity: 1;
+}
+
+.modal-header .close:hover {
+  opacity: 0.5;
+}
+
+.modal-header .close:focus {
+  outline: none;
+}
+
+.modal-content .modal-footer {
+  border-color: #6eceb2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal-content .modal-body h1 {
+  color: var(--primary);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.modal-content .modal-body h3 {
+  margin-bottom: 3rem;
+}
+
+.modal-content .modal-body .btn-std {
+  display: block;
+  margin: 24px auto;
+  width: 75%;
+}
+
+.modal-content .modal-footer .btn-std {
+  color: #fff;
+  float: left;
+}
+
+.carousel-modal .modal-content .modal-footer {
+  display: none;
+}
+
+.modal-content .modal-footer .btn-std:hover {
+  color: #fff;
+}
+
+#contact-modal .modal-dialog {
+  max-width: 50%;
+}
+
+#contact-modal .modal-content .modal-body {
+  padding-top: 40px;
+}
+
+#contact-modal .modal-content .modal-body h3 {
+  text-align: center;
+}
+
+.modal.interstitial .modal-ctas {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal.interstitial .modal-ctas .btn-std {
+  text-align: center;
+  width: 45%;
+}
+
+a.btn-std, .btn-std {
+  color: #fff;
+  background: #00857C;
+  border: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 2px 0 0;
+  padding: 10px 25px 11px;
+}
+
+a.btn-std:hover, .btn-std:hover {
+  background-color: #005C55;
+}
+
+@media (max-width: 650px) {
+  #contact-modal .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+/* End Modals */
 /***MEDIA QUERY*****/
 @media (min-width: 992px) {
   .w-lg-75 {

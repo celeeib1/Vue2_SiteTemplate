@@ -34,6 +34,7 @@
 
 
     </main>
+    <LeavingModal/>
     <Footer />
   </div>
 </template>
@@ -41,14 +42,14 @@
 <script>
   import HeaderNav from '@/components/HeaderNav.vue';
   import Footer from "@/components/Footer.vue";
-
+  import LeavingModal from "@/components/LeavingModal.vue";
 
   export default {
     name: 'Faqs',
     components: {
       HeaderNav,
-      Footer
-     
+      Footer,
+      LeavingModal
     }
     };
   

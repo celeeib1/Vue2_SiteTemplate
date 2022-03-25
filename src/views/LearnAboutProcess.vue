@@ -38,7 +38,7 @@
           <img alt="" role="presentation" src="@/assets/images/icon-touch.png" class="img-fluid" />
           </div>
           <div class="col-10 grant-process-step p-5">
-          <p class="step"><span class="step-num">3</span>Log in to the MSD grant portal ( <a href="http://www.msdgrant.com" class="content-link" target="_blank">www.msdgrant.com</a>) and apply</p>
+          <p class="step"><span class="step-num">3</span>Log in to the MSD grant portal ( <a href="http://www.msdgrant.com" class="content-link interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal" target="_blank">www.msdgrant.com</a>) and apply</p>
            <p>Merck Sharp &amp; Dohme (MSD), known as Merck &amp; Co., Inc. in the U.S. and Canada, offers support through a variety of grant and charitable contribution programs, 
            each of which has its own focus and application process. </p>
            <ul class="minus-plus-bullets">
@@ -87,7 +87,7 @@
           </div>
           <div class="col-10 grant-process-step p-5">
            <p class="step"><span class="step-num">7</span>Carry out your activities, then report back to us</p>
-           <p>Once your program is completed, you will need to fill out an <a href="" target="_blank" class="content-link">outcomes form</a> and a <router-link to="/" class="content-link">reconciliation form</router-link>.</p>
+           <p>Once your program is completed, you will need to fill out an <a href="" target="_blank" class="content-link interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal">outcomes form</a> and a <router-link to="/" class="content-link">reconciliation form</router-link>.</p>
 
           </div>
         </div>
@@ -136,7 +136,7 @@
              <li>For the best results, you may want to use Google Chrome as your browser when you apply</li>
             <li>Read our FAQs to see if your organization and program or event are eligible for support and find answers to the most common grant questions</li>
             <li>Prepare a summary of your program or event that includes specifics on how you will use the funds and how you will evaluate and communicate the program outcomes. Keep it concise</li>
-            <li>Have your required document  prepared and ready to upload</li>
+            <li>Have your required documents prepared and ready to upload</li>
             </ul>
             </accordion>
         </accordions>
@@ -151,7 +151,7 @@
         <!--START CONTAINER-->
           <div class="container py-5 my-3 bg-ltgray p-5">
           <h2 class="text-center">Apply at the MSD grant portal</h2>
-          <h3 class="text-center my-4">Once your prep work is completed you are ready to submit an application</h3>
+          <h3 class="text-center my-4">Once your prep work is completed, you are ready to submit an application</h3>
           <div class="container-md-w-50 mx-auto">
            <a href="https://msdimegrants.com/" target="_blank" class="arrow-btn lgtext bg-teal my-5 mx-auto d-block px-5"><span>Merck grant submission tool</span></a>
             </div>
@@ -165,6 +165,7 @@
         <!--END CONTAINER-->  
         
     </main>
+    <LeavingModal/>
     <Footer />
   </div>
 </template>
@@ -175,6 +176,7 @@
   import HelpfulLinks from "@/components/HelpfulLinks.vue";
   import Accordions from "@/components/Accordions.vue";
   import accordion from "@/components/AccordionItem.vue";
+  import LeavingModal from "@/components/LeavingModal.vue";
 
   export default {
     name: 'grant-types',
@@ -183,7 +185,8 @@
       Footer,
       HelpfulLinks,
       accordion,
-      Accordions
+      Accordions,
+      LeavingModal
     }
   }
 </script>

@@ -22,13 +22,13 @@
 
         <div class="row">
           <div class="col-lg-6 pe-lg-5">
-            <a href="https://msdimegrants.com/" target="_blank" class="arrow-btn bg-teal my-3"><span>Patient Advocacy Grants</span></a>
+            <a href="https://msdimegrants.com/" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Patient Advocacy Grants</span></a>
           </div>
           <div class="col-lg-6 ps-lg-5">
             <router-link to="/after-you-apply" class="arrow-btn bg-teal my-3"><span>What to do after you apply<br />
                 or receive a grant</span></router-link>
-          </div>
-        </div>
+                </div>
+                </div>
       </div>
       <!--END CONTAINER-->
 
@@ -110,8 +110,7 @@
           <p>Eligible applicants may be non-profit (501(c)3 registered), U.S.-based patient or advocacy organizations whose primary purpose is to raise funds to support the 
           charitable mission of the organization.</p>
             <p class="text-teal bold mt-4"> Who is not eligible for these grants?</p>
-
-          
+         
           </div>
           </div>
           </div>
@@ -124,6 +123,7 @@
         <!--END CONTAINER-->  
           
     </main>
+     <LeavingModal/>
     <Footer />
   </div>
 </template>
@@ -132,13 +132,15 @@
   import HeaderNav from '@/components/HeaderNav.vue';
   import Footer from "@/components/Footer.vue";
   import HelpfulLinks from "@/components/HelpfulLinks.vue";
+  import LeavingModal from "@/components/LeavingModal.vue";
 
   export default {
     name: 'grant-types',
     components: {
       HeaderNav,
       Footer,
-      HelpfulLinks
+      HelpfulLinks,
+      LeavingModal
     }
   }
-</script>
+  </script>
