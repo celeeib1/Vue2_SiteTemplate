@@ -1,4 +1,4 @@
-# scgppph-us-patient-advocacy-grant-site
+# Vue2 Template Site
 
 ## Project setup
 ```
