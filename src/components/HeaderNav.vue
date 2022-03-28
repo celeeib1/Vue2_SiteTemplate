@@ -1,10 +1,10 @@
 <template>
 <header role="banner" class="site-header sticky-top">
-  <nav class="navbar navbar-expand bg-navy pb-0">
+  <nav class="navbar navbar-expand-lg bg-navy pb-0">
     <div class="container mx-auto d-block">
       <div class="row py-4">
         <div class="col-lg-11 col-md-10 col-9">
-           <router-link to="/" class="navbar-brand site-title my-5">Merck US Patient Advocacy Grants</router-link>
+           <router-link to="/" class="navbar-brand site-title my-5">HeaderNav Component</router-link>
         </div>
         <div class="col-lg-2 col-md-2 col-3 text-end">
           <button
@@ -24,20 +24,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li class="nav-item pe-lg-3">
-                <router-link to="/" class="nav-link px-0 h-100">Home</router-link>
+                <router-link to="/" class="nav-link px-0 h-100">Router Link 1</router-link>
               </li>
               <li class="nav-item px-lg-3">
-                <router-link to="/grant-types" class="nav-link px-0 h-100">Grant types &amp; eligibility</router-link>
+                <router-link to="/grant-types" class="nav-link px-0 h-100">Router Link2</router-link>
               </li>
               <li class="nav-item px-lg-3">
-                <router-link to="/learn-about-process" class="nav-link px-0 h-100">Learn about the process</router-link>
+                <router-link to="/learn-about-process" class="nav-link px-0 h-100">Router Link3</router-link>
               </li>
               <li class="nav-item px-lg-3">
-                <router-link to="/after-you-apply" class="nav-link px-0 h-100">After you apply or receive a grant</router-link>
+                <router-link to="/after-you-apply" class="nav-link px-0 h-100">Router Link4</router-link>
               </li>
 
               <li class="nav-item ps-lg-3">
-                <router-link to="/faqs" class="nav-link px-0 h-100">Have a question?</router-link>
+                <router-link to="/faqs" class="nav-link px-0 h-100">Router Link5</router-link>
               </li>
             </ul>
           </div>

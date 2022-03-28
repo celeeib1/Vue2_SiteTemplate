@@ -10,7 +10,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Patient Advocacy - Home',
+      title: 'Template - Home',
     },
       metaTags: [
         {
@@ -27,6 +27,9 @@ const routes = [
   {
     path: '/grant-types',
     name: 'grant-types',
+    meta: {
+      title: 'Template - Page Name',
+    },
   
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -36,21 +39,33 @@ const routes = [
   {
   path: '/learn-about-process',
   name: 'learn-about-process',
+  meta: {
+    title: 'Template - Page Name',
+  },
   component: () => import(/* webpackChunkName: "learn-about-process" */ '../views/LearnAboutProcess.vue')
 },
 {
   path: '/after-you-apply',
   name: 'after-you-apply',
+  meta: {
+    title: 'Template - Page Name',
+  },
   component: () => import(/* webpackChunkName: "after-you-apply" */ '../views/AfterYouApply.vue')
 },
 {
   path: '/faqs',
   name: 'faqs',
+  meta: {
+    title: 'Template - Page Name',
+  },
   component: () => import(/* webpackChunkName: "faqs" */ '../views/Faqs.vue')
 },
 {
   path: '/sitemap',
   name: 'sitemap',
+  meta: {
+    title: 'Template - Page Name',
+  },
   component: () => import(/* webpackChunkName: "sitemap" */ '../views/Sitemap.vue')
 }
 ]

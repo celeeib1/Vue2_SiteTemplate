@@ -7,13 +7,12 @@
             <div class="modal-inner">
               <div class="modal-header">
                 <h5 class="modal-title" id="myModalLabel">
-                  You are leaving Merck US Patient Advocacy Grants
+                  Leaving this site Modal Component
                 </h5>
               </div>
               <div class="modal-body">
 
-                <p>The link you have selected will direct you to a site outside of Merck US Patient Advocacy Grants. We are Merck &amp; Co. Inc., Kenilworth, NJ, USA known as 
-                MSD outside the United States and Canada.</p>
+                <p>Set external links to use this modal to tell users they are leaving this site. Examples in Footer component.</p>
 
                 <div class="modal-ctas">
                   <button class="btn-std" data-bs-dismiss="modal">Cancel</button>

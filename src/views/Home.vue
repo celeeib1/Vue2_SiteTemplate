@@ -7,35 +7,29 @@
       <div class="container py-5 section">
         <div class="row">
           <div class="col-12">
-            <h1 id="main-title" class="my-5">Welcome to the Merck U.S. Patient Advocacy (USPA) Independent Grants website</h1>
+            <h1 id="main-title" class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 pe-lg-4">
-            <h2 class="text-teal">Mission</h2>
+            <h2 class="text-teal">Blandit nisl</h2>
             <p>
-              Our mission is to understand the needs and experiences of patients, caregivers, and family members and
-              provide support for high-quality, innovative educational, and awareness initiatives.
+              Fusce elit risus, consequat eget consectetur id, tempor sit amet nunc. Vestibulum sodales blandit nisl vitae consequat.
             </p>
           </div>
           <div class="col-md-6 ps-lg-4">
-            <h2 class="text-teal">Vision</h2>
+            <h2 class="text-teal">Fusce</h2>
             <p>
-              We aspire to be the most trusted industry partner that amplifies the voice and addresses the needs of the
-              patient in all that we do and the programs we support.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit risus, consequat eget consectetur id, tempor sit amet nunc. Vestibulum sodales blandit nisl vitae consequat.
             </p>
           </div>
         </div>
         <hr class="my-5" />
         <div class="row">
           <div class="col-12">
-            <p>Patients are the cornerstone of the work we do at Merck. We believe that providing support to non-profit
-              organizations through grants and charitable contributions
-              is an important way to help address local, regional, and global health challenges.</p>
-            <p>Merck offers independent grants that follow internal and external compliance guidelines, rules, and
-              regulations.</p>
-            <p>The Merck USPA department offers independent grants to support U.S. non-profits who engage in patient
-              advocacy, patient education, and charitable fundraising in the following areas:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit risus, consequat eget consectetur id, tempor sit amet nunc.</p>
+            <p>Proin ac rutrum velit. Nullam sit amet consectetur ex. Donec neque lectus, euismod vel dapibus id, vestibulum ac purus. </p>
+            <p>Morbi sagittis tincidunt ligula:</p>
           </div>
         </div>
         <div class="row mt-4 mb-5">
@@ -47,19 +41,16 @@
           <div class="row">
           <div class="col-md-6">
             <ul class="conditions mt-xl-0 mt-lg-0 mt-md-0 mt-5 mb-0">
-              <li>Anesthesiology/Perioperative Care</li>
-              <li>Cardiovascular - Heart Failure</li>
-              <li>CardiovascularPH (pulmonary hypertension)</li>
-              <li>Chronic Cough</li>
-              <li>Diabetes</li>
-              <li>Gastrointestinal (GI)/Rheumatology</li>
-              <li>Hepatitis C</li>
-              <li>HIV/AIDS</li>
-              <li>Human papillomavirus (HPV)</li>
-              <li>Immunization – Adult</li>
-              <li>Immunization – Pediatric (for children)</li>
-              <li>Infectious Disease</li>
-              <li>Sleep Disorders</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Fusce elit risus</li>
+              <li>Dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Fusce elit risus</li>
+              <li>Dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Sit amet</li>
              </ul>
               <!--<li class="list-unstyled">
                 <p class="mb-0"><a class="toggle-link text-teal" data-bs-toggle="collapse" href="#collapseSubList"
@@ -69,24 +60,15 @@
               </div>
               <div class="col-md-6">
               <ul class="conditions mt-0">
-               <li>Oncology (cancer)
+               <li>Ipsum dolor sit
                <ul>
-                <li>Bladder Cancer</li>
-                <li>Breast Cancer</li>
-                <li>Cervical Cancer</li>
-                <li>Colorectal Cancer</li>
-                <li>Endometrial Cancer (uterine)</li>
-                <li>Gastric Cancer (stomach)</li>
-                <li>Head and neck Cancer</li>
-                <li>Hematologic/Blood Cancers</li>
-                <li>Hepatocellular Carcinoma (liver)</li>
-                <li>Melanoma (skin) Cancer</li>
-                <li>Non-Small Cell Lung Cancer</li>
-                <li>Ovarian Cancer</li>
-                <li>Pan-Tumor</li>
-                <li>Prostate Cancer</li>
-                <li>Renal Cell Carcinoma (kidney)</li>
-                <li>Small Cell Lung Cancer</li> 
+                <li>Sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Fusce elit risus</li>
+              <li>Dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Sit amet</li>
+                
                 </ul>
                   </li>
             
@@ -101,15 +83,11 @@
        
         <div class="row grant-offer">
           <div class="col-12">
-            <p>
-              Merck Sharp &amp; Dohme (MSD), known as Merck &amp; Co., Inc. in the U.S. and Canada, offers support
-              through a variety of
-              grant and charitable contribution programs, each of which has its own focus and application process.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit risus, consequat eget consectetur id, tempor sit amet nunc. Vestibulum sodales blandit nisl vitae consequat.
             </p>
 
           </div>
-          <div class="col-lg-5"> <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-4 single interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Apply for a patient advocacy
-                grant</span></a></div>
+          <div class="col-lg-5"> <a href="https://www.google.com" target="_blank" class="arrow-btn bg-teal my-4 single interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>External Link</span></a></div>
           <div class="col-lg-6"></div>
           <div class="col-lg-1"></div>
         </div>
@@ -123,18 +101,17 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 pe-lg-5">
-              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Apply for a patient advocacy grant</span></a>
+               <router-link to="/grant-types" class="arrow-btn bg-teal my-3"><span>Fusce elit risu</span></router-link>
             </div>
             <div class="col-lg-6 ps-lg-5">
-              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>What to do after you apply<br />
-                  or receive a grant</span></a>
+              <a href="https://www.google.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Fusce elit risu</span></a>
             </div>
             <div class="col-lg-6 pe-lg-5">
-              <a href="https://www.versaic.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Understanding the grant process</span></a>
+              <a href="https://www.google.com" target="_blank" class="arrow-btn bg-teal my-3 interstitial-link" data-bs-toggle="modal" data-bs-target="#interstitial-modal"><span>Fusce elit risu</span></a>
             </div>
             <div class="col-lg-6 ps-lg-5">
-              <router-link to="/faqs" class="arrow-btn bg-teal my-3"><span>Need help?<br />
-                  Explore our FAQs</span></router-link>
+              <router-link to="/faqs" class="arrow-btn bg-teal my-3"><span>Fusce elit risu<br />
+                  Elit risus</span></router-link>
             </div>
           </div>
 
@@ -146,10 +123,7 @@
       <div class="container grant-offer py-5">
         <div class="row">
           <div class="col-12">
-            <p>
-              Merck Sharp &amp; Dohme (MSD), known as Merck &amp; Co., Inc. in the U.S. and Canada, offers support
-              through a variety of
-              grant and charitable contribution programs, each of which has its own focus and application process.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit risus, consequat eget consectetur id, tempor sit amet nunc. Vestibulum sodales blandit nisl vitae consequat.
             </p>
           </div>
         </div>

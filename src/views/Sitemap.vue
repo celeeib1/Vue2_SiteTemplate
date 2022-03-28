@@ -13,17 +13,17 @@
                 <router-link to="/" class="content-link">Home</router-link>
               </li>
               <li class="mb-4">
-                <router-link to="/grant-types" class="content-link">Grant types &amp; eligibility</router-link>
+                <router-link to="/grant-types" class="content-link">LorenIspsum</router-link>
               </li>
               <li class="mb-4">
-                <router-link to="/learn-about-process" class="content-link">Learn about the process</router-link>
+                <router-link to="/learn-about-process" class="content-link">LorenIspsum</router-link>
               </li>
               <li class="mb-4">
-                <router-link to="/after-you-apply" class="content-link">After you apply or receive a grant</router-link>
+                <router-link to="/after-you-apply" class="content-link">LorenIspsum</router-link>
               </li>
 
               <li class="mb-4">
-                <router-link to="/faqs" class="content-link">Have a question?</router-link>
+                <router-link to="/faqs" class="content-link">LorenIspsum</router-link>
               </li>
             </ul>
           </div>

@@ -150,35 +150,9 @@
         </accordions>
         </template>
         <!--END Changes to your process-->
-        <!--OUTCOMES-->
-      <template v-slot:tabPanel-6>
-        <accordions>
-            <accordion title="How do I submit my outcomes report?">
-              <p>Yes, if you need more time, please inform your Merck USPA contact or send an email to 
-              <a class="content-link" href="mailto:uspatientadvocacy@merck.com">uspatientadvocacy@merck.com</a>.</p>
-              <p>We will assess your extension request and give the decision to the person who requested it.
-              </p>
-            </accordion>
-            <accordion title="How long do I have to complete the outcomes form?">
-            <p>You must complete the outcomes form in 45 calendar days.</p>
-            </accordion>
-            <accordion title="Why do I have to submit an outcomes report?">
-            <p> Outcomes give important information (such as attendance numbers, change in knowledge, testimonials, and success tactics) that help us understand the impact and 
-              effectiveness of the programs we support.</p>
-              <p>It is a chance for your organization to share the success of your program. It also verifies that the funding was used as described in the approved request.</p>
-            </accordion>
-            <accordion title="What happens if we don’t complete our outcomes report?">
-            <p>If you do not complete the required outcomes form, it may affect your organization’s eligibility for future grant support.</p>
-            </accordion>
-             <accordion title="Can I request an extension to complete the outcomes form?">
-            <p>Yes, if you need more time, please inform your Merck USPA contact or send an email to uspatientadvocacy@merck.com. We will assess your extension request 
-            and give the decision to the person who requested it.</p>
-            </accordion>
-        </accordions>
-        </template>
-         <!--END OUTCOMES-->
+       
          <!--Reconciliation-->
-      <template v-slot:tabPanel-7>
+      <template v-slot:tabPanel-6>
        <accordions>
             <accordion title="Reconciliation">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis diam elit. Sed ornare nibh erat, quis porttitor 
@@ -233,7 +207,7 @@ export default {
   },
   data() {
     return {
-      tabList: ["Technical", "Eligibility", "Prepare to submit your application", "Review and approval process", "Changes to your process", "Outcomes", "Reconciliation"],
+      tabList: ["Tabs1", "Tabs2", "Tabs3", "Tabs4", "Tabs5", "Tabs6"],
     };
   },
 };
